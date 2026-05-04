@@ -26,7 +26,7 @@ import java.util.List;
 public class SecurityConfig {
 
     private final JwtCookieFilter jwtCookieFilter;
-
+// allowed origin from which backend will return response 
     @Value("${app.cors.allowed-origins:http://localhost:3000}")
     private String allowedOrigins;
 
